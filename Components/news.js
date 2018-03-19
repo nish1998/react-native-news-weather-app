@@ -10,7 +10,7 @@ export default class News extends Component {
   }
 
   componentDidMount() {
-    return fetch('https://newsapi.org/v2/everything?q=india&from=2017-12-12&sortBy=popularity&apiKey=1b7e142b0f4e47a598d63e78740f4d90')
+    return fetch('https://newsapi.org/v2/everything?q=india&from=2017-12-12&sortBy=popularity&apiKey=[your key here]')
       .then((response) => response.json())
       .then((responseJson) => {
         let ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
