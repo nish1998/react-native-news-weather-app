@@ -10,7 +10,7 @@ export default class Weather extends Component {
   }
 
   componentDidMount() {
-    return fetch('http://api.openweathermap.org/data/2.5/forecast?q=kharagpur&APPID=67337c56ad6e914fd845e1fb3162cc64&units=Metric')
+    return fetch('http://api.openweathermap.org/data/2.5/forecast?q=kharagpur&APPID=[your API ID]&units=Metric')
       .then((response) => response.json())
       .then((responseJson) =>{
         let weatherList = responseJson.list[0]
